@@ -1,0 +1,94 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	background-image: url(../images/pattern.png); /* Background pattern provided by subtlepatterns.com */
+	width: 960px;
+	margin: 1em auto;
+}
+
+#logo {
+	background-image: url(../images/logo.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: contain;
+	font-size: 5em;
+	padding-left: 1.35em;
+}
+
+#logo:before {
+	content: 'liceo';
+	color: #333
+}
+
+#logo:after {
+	content: 'Moscati';
+	color: #D86C00
+}
+
+#modulo-cerca {
+	float: right
+}
+
+#modulo-cerca input {
+	width: 13em;
+	padding: .4em 1em;
+	border-radius: 1em;
+	border: 1px solid #CCC;
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav ul {
+	width: 100%;
+	list-style: none;
+	padding: 0;
+}
+
+nav li {
+	float: left;
+	width: 25%;
+	padding: 0 .5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	min-height: 15em;
+}
+
+nav li a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	display: block;
+	border: 2px solid #CCC;
+	border-radius: 25px;
+	padding: .8em;
+	color: inherit;
+	text-decoration: inherit;
+}
+
+nav li a:hover {
+	border-color: #999;
+}
+
+h1 {
+	font-size: 2em;
+	text-transform: uppercase
+}
+
+h2, h3 {
+	font-family: 'Andada', serif;
+	font-weight: 300;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	font-style: italic;
+	font-size: 1em;
+}
+
+footer {
+	clear: left
+}
