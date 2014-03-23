@@ -32,27 +32,25 @@ body {
 }
 
 .minilogo {
-	margin: .1em;
+	margin: .15em .1em;
 	float: right;
-	background-size: contain
+	background-size: contain;
+	height: 1em
 }
 
 .cdg {
 	background-image: url(../images/cdg.png);
 	width: .7em;
-	height: 1em;
 }
 
 .pdt {
 	background-image: url(../images/pdt.png);
 	width: .73em;
-	height: 1em;
 }
 
 .miur {
 	background-image: url(../images/miur.png);
 	width: .87em;
-	height: 1em;
 }
 
 #modulo-cerca {
