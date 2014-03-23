@@ -37,7 +37,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-#modulo-cerca input:hover, input:focus {
+#modulo-cerca input:hover, #modulo-cerca input:focus {
 	border-color: #999;
 }
 
