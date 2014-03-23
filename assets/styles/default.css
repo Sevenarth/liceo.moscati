@@ -37,6 +37,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+#modulo-cerca input:hover, input:active {
+	border-color: #999;
+}
+
 nav ul {
 	width: 100%;
 	list-style: none;
