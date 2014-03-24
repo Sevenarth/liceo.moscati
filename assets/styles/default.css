@@ -69,14 +69,51 @@ body {
 	border-color: #999;
 }
 
-#quicklinks h1 {
-	cursor: pointer;
-	font-weight: 300
+#wrapper {
+	background: #F9F9F9;
+	border: .05em solid #CCC
 }
 
-/*#quicklinks[data-show=yes] > h1 {
-	border-bottom: .05em solid #333
-}*/
+#wrapper h1 {
+	margin: 0;
+	font-size: 1.5em
+}
+
+#wrapper aside h1 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1.7em
+}
+
+#wrapper aside {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	float: right;
+	width: 30%;
+	padding: 1.5em
+}
+
+#wrapper article {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	font-family: 'Andada', serif;
+	width: 70%;
+	padding: 1.5em
+}
+
+#quicklinks h1 {
+	cursor: pointer;
+	font-weight: 300;
+	margin: 0.5em;
+}
+
+#quicklinks[data-show=yes] > h1 {
+	/*border-bottom: .05em solid #333;*/
+}
 
 #quicklinks h1:after {
 	padding-left: .3em;
@@ -95,6 +132,7 @@ body {
 	width: 100%;
 	list-style: none;
 	padding: 0;
+	margin: 0;
 	transition: all .3s ease;
 	max-height: 13em;
 	overflow: hidden
@@ -171,5 +209,6 @@ header nav ul li a {
 header nav ul li a:hover { text-decoration: underline }
 
 footer {
+	margin: 2em 0;
 	clear: left
 }
