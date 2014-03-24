@@ -1,0 +1,36 @@
+#illiceo {
+	background-image: url(../images/liceo.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 14em;
+	color: #EEE;
+	margin-bottom: 1em;
+}
+
+#illiceo div {
+	background-color: rgba(6, 6, 6, 0.6);
+	height: 100%;
+	width: 35%;
+	padding: .5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	float: left
+}
+
+.banner {
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	margin-bottom: .5em;
+}
+
+.pon {
+	background-image: url(../images/pon.jpg);
+	height: 4em;
+}
+
+.cepc {
+	background-image: url(../images/cepc.jpg);
+	height: 6em;
+}
