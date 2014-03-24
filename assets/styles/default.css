@@ -35,6 +35,7 @@ body {
 	margin: .15em .1em;
 	float: right;
 	background-size: contain;
+	background-repeat: no-repeat;
 	height: 1em
 }
 
