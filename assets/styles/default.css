@@ -86,6 +86,8 @@ body {
 
 #quicklinks[data-show=yes] > h1:after {
 	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
 }
 
 #quicklinks div {
@@ -100,7 +102,9 @@ body {
 }
 
 #quicklinks[data-show=no] > div > ul {
-	margin-top: -15em
+	margin-top: -15em;
+	transform: translateZ(0);
+	-webkit-transform: translateZ(0)
 }
 
 #quicklinks li {
