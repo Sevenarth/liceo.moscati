@@ -105,6 +105,12 @@ body {
 	padding: 1.5em
 }
 
+#quicklinks {
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
 #quicklinks h1 {
 	cursor: pointer;
 	font-weight: 300;
