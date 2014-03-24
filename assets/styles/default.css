@@ -8,7 +8,7 @@ body {
 
 a { text-decoration: none }
 a:hover { text-decoration: underline }
-a:active { color: inherit }
+a:visited { color: inherit }
 
 #logo {
 	background-image: url(../images/logo.jpg);
