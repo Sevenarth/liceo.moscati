@@ -11,7 +11,7 @@ a:hover { text-decoration: underline }
 a:visited { color: inherit }
 
 #logo {
-	-ms-interpolation-mode: bicubic;
+	-ms-interpolation-mode: nearest-neighbor;
 	background-image: url(../images/logo.jpg);
 	background-repeat: no-repeat;
 	background-position: left;
@@ -37,7 +37,7 @@ a:visited { color: inherit }
 }
 
 .minilogo {
-	-ms-interpolation-mode: bicubic;
+	-ms-interpolation-mode: nearest-neighbor;
 	margin: .15em .1em;
 	float: right;
 	background-size: contain;
