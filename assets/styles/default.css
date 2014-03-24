@@ -105,17 +105,6 @@ body {
 	padding: 1.5em
 }
 
-#quicklinks {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 800;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  transform: translateZ(0);
-}
-
 #quicklinks h1 {
 	cursor: pointer;
 	font-weight: 300;
@@ -132,6 +121,8 @@ body {
 	transition: transform .3s ease;
 	display: inline-block;
 	content: '>';
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 #quicklinks[data-show=yes] > h1:after {
@@ -141,6 +132,8 @@ body {
 }
 
 #quicklinks ul {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 	width: 100%;
 	list-style: none;
 	padding: 0;
