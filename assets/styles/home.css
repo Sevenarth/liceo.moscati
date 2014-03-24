@@ -35,7 +35,7 @@
 
 .cepc {
 	background-image: url(../images/cepc.jpg);
-	border: .1em dashed #CCC;
+	border: 1px dashed #CCC;
 	height: 6.1em;
 }
 
