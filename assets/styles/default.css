@@ -70,12 +70,13 @@ body {
 }
 
 #quicklinks h1 {
-	cursor: pointer
+	cursor: pointer;
+	font-weight: 300
 }
 
-#quicklinks h1 {
+/*#quicklinks[data-show=yes] > h1 {
 	border-bottom: .05em solid #333
-}
+}*/
 
 #quicklinks h1:after {
 	padding-left: .3em;
@@ -90,21 +91,17 @@ body {
 	-o-transform: rotate(90deg);
 }
 
-#quicklinks div {
-	overflow: hidden
-}
-
 #quicklinks ul {
 	width: 100%;
 	list-style: none;
 	padding: 0;
 	transition: all .3s ease;
+	max-height: 13em;
+	overflow: hidden
 }
 
-#quicklinks[data-show=no] > div > ul {
-	margin-top: -15em;
-	transform: translateZ(0);
-	-webkit-transform: translateZ(0)
+#quicklinks[data-show=no] > ul {
+	max-height: 0
 }
 
 #quicklinks li {
@@ -114,7 +111,7 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-	height: 15em;
+	height: 13em
 }
 
 #quicklinks li a {
