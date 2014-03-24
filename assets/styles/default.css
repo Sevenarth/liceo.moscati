@@ -69,10 +69,38 @@ body {
 	border-color: #999;
 }
 
+#quicklinks h1 {
+	cursor: pointer
+}
+
+#quicklinks h1 {
+	border-bottom: .05em solid #333
+}
+
+#quicklinks h1:after {
+	padding-left: .3em;
+	transition: transform .3s ease;
+	display: inline-block;
+	content: '>';
+}
+
+#quicklinks[data-show=yes] > h1:after {
+	transform: rotate(90deg);
+}
+
+#quicklinks div {
+	overflow: hidden
+}
+
 #quicklinks ul {
 	width: 100%;
 	list-style: none;
 	padding: 0;
+	transition: all .3s ease;
+}
+
+#quicklinks[data-show=no] > div > ul {
+	margin-top: -15em
 }
 
 #quicklinks li {
@@ -82,7 +110,7 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-	min-height: 15em;
+	height: 15em;
 }
 
 #quicklinks li a {
