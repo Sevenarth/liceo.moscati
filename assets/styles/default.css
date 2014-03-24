@@ -6,6 +6,10 @@ body {
 	margin: 1em auto;
 }
 
+a { text-decoration: none }
+a:hover { text-decoration: underline }
+a:active { color: inherit }
+
 #logo {
 	background-image: url(../images/logo.jpg);
 	background-repeat: no-repeat;
