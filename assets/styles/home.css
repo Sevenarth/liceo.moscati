@@ -19,6 +19,9 @@
 }
 
 .banner {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	background-repeat: no-repeat;
 	background-size: contain;
 	width: 100%;
@@ -27,10 +30,39 @@
 
 .pon {
 	background-image: url(../images/pon.jpg);
-	height: 4em;
+	height: 3.15em;
 }
 
 .cepc {
 	background-image: url(../images/cepc.jpg);
-	height: 6em;
+	border: .1em dashed #CCC;
+	height: 6.1em;
+}
+
+aside ul {
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+
+aside li {
+	margin: .3em;
+	padding: 0;
+	font-size: .95em
+}
+
+aside li:before {
+	content: ">";
+	padding-right: 1em;
+	font-size: .8em;
+	line-height: 1.2em;
+}
+
+aside a {
+	text-decoration: none;
+	color: inherit
+}
+
+aside a:hover {
+	text-decoration: underline
 }
