@@ -1,3 +1,34 @@
+#wrapper h1 {
+	margin: 0;
+	font-size: 1.5em
+}
+
+#wrapper aside h1 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1.7em
+}
+
+#wrapper aside {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	float: right;
+	width: 30%;
+	padding: 1.5em
+}
+
+#wrapper article {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	font-family: 'Andada', serif;
+	width: 70%;
+	padding: 1.5em
+}
+
 #illiceo {
 	background-image: url(../images/liceo.jpg);
 	background-size: cover;

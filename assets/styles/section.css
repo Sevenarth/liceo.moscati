@@ -1,0 +1,76 @@
+#wrapper { background-color: #F3F3F3 }
+
+#wrapper h1 {
+	background-color: #F6F6F6;
+	margin: 0;
+	padding: .45em .85em;
+	font-weight: 300;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	border-bottom: 2px solid #BBB
+}
+
+#wrapper article {
+	background-color: #FFF;
+	float: right;
+	width: 77%;
+	font-family: 'Andada', serif;
+	border-left: 1px solid #BBB;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	padding: 1.5em
+}
+
+#wrapper article p {
+	line-height: 1.5em;
+}
+
+#wrapper article p:first-child:first-letter { font-size: 1.5em }
+#wrapper article p:first-child { margin-top: 0 }
+#wrapper article p:last-child { margin-bottom: 0 }
+
+#wrapper aside {
+	float: left;
+	width: 23%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#wrapper aside ul {
+	list-style: none;
+	padding: 0
+}
+
+#wrapper aside li {
+	margin: 0;
+	margin-left: .75em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#wrapper aside li:first-child {
+	border-top: none
+}
+
+#wrapper aside li:not(.active) + li {
+	border-top: 1px solid #CCC
+}
+
+#wrapper aside .active {
+	padding: .45em;
+	margin: 0 !important;
+	text-indent: .95em;
+	background-color: #FFF;
+	border-top: 1px solid #CCC !important;
+	border-bottom: 1px solid #CCC
+}
+
+#wrapper aside li a {
+	display: block;
+	padding: .45em;
+	text-indent: .2em;
+	color: inherit
+}
