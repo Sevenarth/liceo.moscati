@@ -17,6 +17,7 @@
 		/* Page Styles */
 		@import url(assets/styles/default.css) only screen and (min-width: 600px);
 		@import url(assets/styles/tablet.css) only screen and (min-width: 600px) and (max-width: 799px);
+		@import url(assets/styles/mobile.css) only screen and (max-width: 599px);
 		@import url(assets/styles/section.css);
 		</style>
 		
@@ -43,7 +44,8 @@
 				<input type="text" placeholder="Cerca nel sito.." />
 			</div>
 			
-			<nav>
+			<nav data-show="no">
+				<h1 data-bottone-menu="yes" data-menu="header nav">Men&ugrave;</h1>
 				<ul>
 					<li><a href="index.html">Il Liceo</a></li>
 					<li><a href="#">Organigramma</a></li>

@@ -117,3 +117,10 @@ nav li:last-child a {
 #quicklinks h3 {
 	display: none
 }
+
+#wrapper {
+	background-color: #F6F6F6;
+	border-bottom: 2px solid #CCC;
+	margin-bottom: 1.5em;
+	overflow: auto
+}

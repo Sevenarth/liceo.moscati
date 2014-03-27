@@ -90,7 +90,7 @@
 	}
 }
 
-@media (min-width: 600px) and (max-width: 767px)
+@media (max-width: 767px)
 {
 	#menu-sottosezioni {
 		border-bottom: 1px solid #CCC;
@@ -134,5 +134,12 @@
 	
 	#wrapper aside li {
 		margin-right: .75em
+	}
+}
+
+@media only screen and (max-width: 599px)
+{
+	#wrapper h1 {
+		border-top: 2px solid #CCC
 	}
 }

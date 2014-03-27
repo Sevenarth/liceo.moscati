@@ -125,12 +125,6 @@ aside a:hover {
 
 @media only screen and (max-width: 599px)
 {
-	#wrapper {
-		background-color: #F6F6F6;
-		border-bottom: 2px solid #CCC;
-		margin-bottom: 1.5em;
-	}
-
 	#wrapper aside {
 		display: none
 	}
