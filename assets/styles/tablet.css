@@ -29,6 +29,10 @@
 		max-height: 24em
 	}
 	
+	#quicklinks li a {
+		min-height: 11em
+	}
+	
 	.minilogo {
 		display: none
 	}
