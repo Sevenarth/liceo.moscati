@@ -79,19 +79,9 @@
 	-moz-box-sizing: border-box;
 	background-repeat: no-repeat;
 	background-size: contain;
-	width: 100%;
+	max-width: 100%;
 	margin-bottom: .5em;
-}
-
-.pon {
-	background-image: url(../images/pon.jpg);
-	height: 3.15em;
-}
-
-.cepc {
-	background-image: url(../images/cepc.jpg);
-	border: 1px dashed #CCC;
-	height: 6.1em;
+	border: 1px dashed #CCC
 }
 
 aside ul, #wrapper article .box ul {
@@ -120,4 +110,15 @@ aside a {
 
 aside a:hover {
 	text-decoration: underline
+}
+
+@media only screen and (min-width: 768px) and (max-width: 799px)
+{
+	#wrapper aside {
+	display: none
+	}
+
+	#wrapper article {
+		width: 100% !important
+	}
 }

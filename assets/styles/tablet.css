@@ -1,0 +1,15 @@
+.minilogo:last-child {
+	clear: both
+}
+
+#quicklinks ul {
+	max-height: 22em
+}	
+
+#quicklinks ul li {
+	width: 50%
+}
+
+#quicklinks ul li:nth-child(3) {
+	clear: left
+}

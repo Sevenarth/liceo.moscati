@@ -1,8 +1,12 @@
+html {
+	margin: 0 1em
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	background-image: url(../images/pattern.png); /* Background pattern provided by subtlepatterns.com */
-	width: 900px;
+	max-width: 900px;
 	margin: 1em auto;
 }
 
@@ -116,7 +120,7 @@ a:visited { color: inherit }
 	padding: 0;
 	margin: 0;
 	transition: all .3s ease;
-	max-height: 13em;
+	max-height: 16em;
 	overflow: hidden
 }
 
@@ -127,11 +131,11 @@ a:visited { color: inherit }
 #quicklinks li {
 	float: left;
 	width: 25%;
+	margin-bottom: 1em;
 	padding: 0 .5em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-	height: 13em
 }
 
 #quicklinks li a {
