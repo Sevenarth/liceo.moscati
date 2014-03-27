@@ -138,11 +138,11 @@ aside a:hover {
 	#wrapper article {
 		width: 100%;
 		padding: 0;
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 	
 	#wrapper article > p {
-		margin: .75em;
+		margin: 1em;
 	}
 	
 	#illiceo {
@@ -157,7 +157,7 @@ aside a:hover {
 	}
 	
 	#illiceo h2 {
-		font-size: 1.2em
+		font-size: 1.5em
 	}
 	
 	#illiceo h2, #illiceo p {
@@ -170,7 +170,7 @@ aside a:hover {
 		border-right: none;
 		margin: 0;
 		clear: both;
-		font-size: 1em;
+		font-size: 1.25em;
 	}
 	
 	#wrapper article .left, #wrapper article .right {
