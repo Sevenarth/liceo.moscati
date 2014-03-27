@@ -29,8 +29,9 @@
 		<script>
 		<!--
 		$(function(){
-			$("#quicklinks h1").click(function(){
-				$("#quicklinks").attr("data-show", ($("#quicklinks").attr("data-show") == "yes") ? "no" : "yes");
+			$("*[data-bottone-menu=yes]").click(function(){
+				$(this).attr("data-enabled-menu", ($($(this).attr("data-menu")).attr("data-show") == "yes") ? "no" : "yes");
+				$($(this).attr("data-menu")).attr("data-show", ($($(this).attr("data-menu")).attr("data-show") == "yes") ? "no" : "yes");
 			});
 		});
 		-->

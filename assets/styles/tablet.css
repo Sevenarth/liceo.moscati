@@ -13,3 +13,23 @@
 #quicklinks ul li:nth-child(3) {
 	clear: left
 }
+
+@media (min-width: 600px) and (max-width: 767px)
+{
+	#modulo-cerca {
+		clear: both
+	}
+
+	#logo {
+		margin-top: .5em;
+		clear: both
+	}
+	
+	#quicklinks ul {
+		max-height: 24em
+	}
+	
+	.minilogo {
+		display: none
+	}
+}

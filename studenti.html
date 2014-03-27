@@ -29,8 +29,9 @@
 		<script>
 		<!--
 		$(function(){
-			$("#quicklinks h1").click(function(){
-				$("#quicklinks").attr("data-show", ($("#quicklinks").attr("data-show") == "yes") ? "no" : "yes");
+			$("*[data-bottone-menu=yes]").click(function(){
+				$(this).attr("data-enabled-menu", ($($(this).attr("data-menu")).attr("data-show") == "yes") ? "no" : "yes");
+				$($(this).attr("data-menu")).attr("data-show", ($($(this).attr("data-menu")).attr("data-show") == "yes") ? "no" : "yes");
 			});
 		});
 		-->
@@ -61,7 +62,7 @@
 			<div id="logo"></div>
 		</header>
 		<nav id="quicklinks" data-show="no">
-			<h1>Accesso veloce</h1>
+			<h1 data-bottone-menu="yes" data-menu="#quicklinks">Accesso veloce</h1>
 			<ul>
 				<li>
 					<a href="studenti.html">
@@ -91,7 +92,8 @@
 		</nav>
 		<section id="wrapper">
 			<h1>Studenti</h1>
-			<aside>
+			<div id="menu-sottosezioni" data-bottone-menu="yes" data-menu="#wrapper aside"></div>
+			<aside data-show="no">
 				<ul>
 					<li><a href="#" title="Offerta Formativa">Offerta Formativa</a></li>
 					<li><a href="#" title="Biblioteca">Biblioteca</a></li>
