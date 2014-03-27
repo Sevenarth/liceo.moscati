@@ -168,6 +168,6 @@ aside a:hover {
 	}
 	
 	#wrapper article .left, #wrapper article .right {
-		float: initial
+		float: inherit
 	}
 }
