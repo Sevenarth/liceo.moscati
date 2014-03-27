@@ -122,3 +122,58 @@ aside a:hover {
 		width: 100% !important
 	}
 }
+
+@media only screen and (max-width: 599px)
+{
+	#wrapper {
+		background-color: #F6F6F6;
+		border-bottom: 2px solid #CCC;
+		margin-bottom: 1.5em;
+	}
+
+	#wrapper aside {
+		display: none
+	}
+	
+	#wrapper article {
+		width: 100%;
+		padding: 0;
+		font-size: 1.35em;
+	}
+	
+	#wrapper article > p {
+		margin: .75em;
+	}
+	
+	#illiceo {
+		position: relative
+	}
+	
+	#illiceo div {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: auto
+	}
+	
+	#illiceo h2 {
+		font-size: 1.75em
+	}
+	
+	#illiceo h2, #illiceo p {
+		margin: 0
+	}
+	
+	#wrapper article .box {
+		background-color: #FFF;
+		border-left: none;
+		border-right: none;
+		margin: 0;
+		clear: both;
+		font-size: 1.3em;
+	}
+	
+	#wrapper article .left, #wrapper article .right {
+		float: initial
+	}
+}

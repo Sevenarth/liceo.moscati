@@ -1,0 +1,120 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	background-image: url(../images/pattern.png); /* Background pattern provided by subtlepatterns.com */
+	margin: 0;
+}
+
+header nav h1 {
+	display: block;
+	margin: .25em .5em;
+}
+
+a { text-decoration: none }
+a:hover { text-decoration: underline }
+a:visited { color: inherit }
+
+#modulo-cerca input {
+	width: 100%;
+	font-size: 1.5em;
+	padding: .4em 1em;
+	border: none;
+	border-bottom: 1px solid #CCC;
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box
+}
+
+#logo {
+	-ms-interpolation-mode: nearest-neighbor;
+	background-image: url(../images/logo.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: contain;
+	font-size: 4.5em;
+	padding-left: 1.35em;
+	margin-top: .25em
+}
+
+#logo:before {
+	content: 'liceo';
+	color: #333
+}
+
+#logo:after {
+	content: 'Moscati';
+	color: #D86C00
+}
+
+.minilogo {
+	display: none
+}
+
+nav h1 {
+	cursor: pointer;
+	font-weight: 300;
+	margin: 0.5em;
+	font-size: 2.5em;
+	text-transform: uppercase
+}
+
+nav h1:after {
+	padding-left: .3em;
+	-webkit-transition: transform .3 ease;
+	transition: transform .3s ease;
+	display: inline-block;
+	content: '>';
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+nav[data-show=yes] > h1:after {
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+}
+
+nav ul {
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	transition: all .3s ease;
+	max-height: 19em;
+	overflow: hidden
+}
+
+header nav ul {
+	max-height: 20em
+}
+
+nav[data-show=no] > ul {
+	max-height: 0
+}
+
+nav li a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	display: block;
+	background-color: #FFF;
+	border-top: 2px solid #CCC;
+	padding: .8em;
+	color: inherit;
+	font-size: 1.25em;
+	text-decoration: inherit;
+}
+
+nav li:last-child a {
+	border-bottom: 2px solid #CCC
+}
+
+#quicklinks h2 {
+	margin: 0;
+	font-family: 'Andada', serif;
+	font-weight: 300;
+}
+
+#quicklinks h3 {
+	display: none
+}

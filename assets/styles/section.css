@@ -79,6 +79,17 @@
 	color: inherit
 }
 
+@media (min-width: 768px) and (max-width: 799px)
+{
+	#wrapper article {
+		width: 70%
+	}
+	
+	#wrapper aside {
+		width: 30%
+	}
+}
+
 @media (min-width: 600px) and (max-width: 767px)
 {
 	#menu-sottosezioni {

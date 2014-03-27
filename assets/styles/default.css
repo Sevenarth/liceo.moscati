@@ -14,6 +14,10 @@ a { text-decoration: none }
 a:hover { text-decoration: underline }
 a:visited { color: inherit }
 
+header nav h1 {
+	display: none
+}
+
 #logo {
 	-ms-interpolation-mode: nearest-neighbor;
 	background-image: url(../images/logo.jpg);
@@ -90,6 +94,8 @@ a:visited { color: inherit }
 	cursor: pointer;
 	font-weight: 300;
 	margin: 0.5em;
+	font-size: 2em;
+	text-transform: uppercase
 }
 
 #quicklinks[data-show=yes] > h1 {
@@ -152,11 +158,6 @@ a:visited { color: inherit }
 
 #quicklinks li a:hover {
 	border-color: #999;
-}
-
-#quicklinks h1 {
-	font-size: 2em;
-	text-transform: uppercase
 }
 
 #quicklinks h2, h3 {
