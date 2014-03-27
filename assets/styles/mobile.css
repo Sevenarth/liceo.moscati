@@ -5,9 +5,75 @@ body {
 	margin: 0;
 }
 
-header nav h1 {
-	display: block;
-	margin: .25em .5em;
+#mobile-head {
+	display: block
+}
+
+#mobile-head #mobile-logo {
+	position: relative;
+	background-image: url(../images/logo.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: contain;
+	padding-left: 2.9em;
+	font-size: 2.5em;
+	height: 2.7em;
+}
+
+#mobile-logo:before {
+	color: #333;
+	content: "liceo\A";
+	font-size: .9em;
+	white-space: pre;
+}
+
+#mobile-logo:after {
+	color: #D86C00;
+	position: absolute;
+	top: .5em;
+	left: 1.8em;
+	font-size: 1.5em;
+	content: "Moscati"
+}
+
+#mobile-head ul {
+	border-top: 1px solid #CCC;
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+#mobile-head li:first-child {
+	border-right: 1px solid #CCC;
+}
+
+#mobile-head li {
+	background: #FFF;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 0;
+	width: 50%;
+	text-transform: uppercase;
+	text-align: center;
+	padding: .6em;
+	font-size: 1.1em;
+	float: left
+}
+
+#mobile-head li:after {
+	padding-left: .3em;
+	-webkit-transition: transform .3 ease;
+	transition: transform .3s ease;
+	display: inline-block;
+	content: '>';
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#mobile-head li[data-enabled-menu=yes]:after {
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
 }
 
 a { text-decoration: none }
@@ -16,7 +82,7 @@ a:visited { color: inherit }
 
 #modulo-cerca input {
 	width: 100%;
-	font-size: 1.5em;
+	font-size: 1.15em;
 	padding: .4em 1em;
 	border: none;
 	border-bottom: 1px solid #CCC;
@@ -25,15 +91,8 @@ a:visited { color: inherit }
 	-webkit-box-sizing: border-box
 }
 
-#logo {
-	-ms-interpolation-mode: nearest-neighbor;
-	background-image: url(../images/logo.jpg);
-	background-repeat: no-repeat;
-	background-position: left;
-	background-size: contain;
-	font-size: 3em;
-	padding-left: 1.35em;
-	margin-top: .25em
+#logo, #istituzioni, nav h1, #quicklinks h3 {
+	display: none
 }
 
 #logo:before {
@@ -46,35 +105,8 @@ a:visited { color: inherit }
 	color: #D86C00
 }
 
-.minilogo {
-	display: none
-}
-
-nav h1 {
-	cursor: pointer;
-	font-weight: 300;
-	margin: 0.5em;
-	font-size: 2em;
-	text-transform: uppercase
-}
-
-nav h1:after {
-	padding-left: .3em;
-	-webkit-transition: transform .3 ease;
-	transition: transform .3s ease;
-	display: inline-block;
-	content: '>';
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-nav[data-show=yes] > h1:after {
-	transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-}
-
 nav ul {
+	clear: both;
 	width: 100%;
 	list-style: none;
 	padding: 0;
@@ -114,11 +146,8 @@ nav li:last-child a {
 	font-weight: 300;
 }
 
-#quicklinks h3 {
-	display: none
-}
-
 #wrapper {
+	clear: both;
 	background-color: #F6F6F6;
 	border-bottom: 2px solid #CCC;
 	margin-bottom: 1.5em;

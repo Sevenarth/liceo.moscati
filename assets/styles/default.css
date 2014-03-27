@@ -18,6 +18,10 @@ header nav h1 {
 	display: none
 }
 
+#mobile-head {
+	display: none
+}
+
 #logo {
 	-ms-interpolation-mode: nearest-neighbor;
 	background-image: url(../images/logo.jpg);
